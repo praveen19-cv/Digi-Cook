@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Digi Cook
+        </title>
+        <link rel="icon" type="image/x-icon" href="logo.png" >
+    </head>
+    <img src="logo.png" alt="logo"
+    style="float:left;width:50px;height:50px">
+    <p style="color:black;font-size:40px"><b> Digi Cook</b></p>
+    <div class = "logout">
+        <a href = "index.html">
+            <input type="button"  onclick = "alert('Logged Out successfully')" value=" Logout" >
+        </a>
+    </div>
+    <hr class = "topline">
+    <h1> Hello user,</h1>
+    <p><b> Your Recipes</b></p>
+    <style>
+    table, th, td { border:1px solid black;
+    }
+    </style>
+    <body>
+
+        <table style="width:100%; text-align: center;" >
+            <tr>
+            <th>Name of the recipe</th>
+            <th>View/Edit</th>
+            <th>Remove</th>
+            </tr>
+            <tr>
+            <td>Hyderabad Chicken Biryani</td>
+            <td><a href="View.html" ><input type="button" value= "View"></a></td>
+            <td><input type="button" onclick="alert('Removed successfully')" value="Remove"></td>
+            </tr>
+            <tr>
+            <td>Butter Kulcha</td>
+            <td><button>view</button></td>
+            <td><input type="button" onclick="alert('Removed successfully')" value="Remove"></td>
+            </tr>
+        </table>
+        <br><br>
+        <div style = "text-align: center;">
+            <p><b>To add a recipe </b> 
+                <a href="addrecipe.html" ><input type="button" value ="Click here"></a>
+            </p>
+        </div>
+        <marquee behavior="scroll" direction="right" scrollamount="10" width = "100%"><b>Digi Cook -- Digi Cook -- Digi Cook</b></marquee>
+
+        
+    </body>
+</html>
