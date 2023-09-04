@@ -3,143 +3,19 @@
   <head>
     <title>Digi Cook</title>
     <link rel="icon" type="image/x-icon" href="recipe logo.png" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        animation-name: bground;
-        background-color: lightblue;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-delay: 0s;
-      }
-      .header {
-        margin: 0;
-        padding: 0;
-      }
-      .Login {
-        position: relative;
-        top: 0;
-        left: 95%;
-        margin: 2px;
-        padding: 5px;
-        padding-bottom: 0.5%;
-        padding-top: 0.5%;
-      }
-      .logo {
-        vertical-align: middle;
-        padding-right: 1px;
-        text-align: start;
-        font-size: 100%;
-        white-space: nowrap;
-      }
-      .heading-name {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        line-height: 1.2;
-        font-size: 18px;
-      }
-      .all-cuisine {
-        text-align: center;
-      }
-      .cuisine {
-        display: inline-block;
-        vertical-align: top;
-        margin: 10px;
-        text-align: left;
-      }
-      .top-recipes {
-        text-align: center;
-        margin-top: 20px;
-      }
-      .recipe-button {
-        margin: 10px;
-        padding: 5px 10px;
-        border: none;
-        cursor: pointer;
-        text-decoration: none;
-        display: inline-block;
-      }
-      .indian-cuisine {
-        position: absolute;
-        top: 0%;
-        right: 75%;
-        margin: 0px;
-        padding: 0px;
-        padding-bottom: 0%;
-        padding-top: 0.5%;
-      }
-      .chinese-header {
-        position: absolute;
-        top: 0%;
-        right: 66%;
-        margin: 0px;
-        padding: 0px;
-        padding-bottom: 0%;
-        padding-top: 0.5%;
-      }
-      .indian-button {
-        font-size: 20px;
-        display: inline-block;
-      }
-      .chinese-button {
-        font-size: 30px;
-        position: absolute;
-        right: 30%;
-      }
-      .indcuisine-button {
-        font-size: 30px;
-        position: absolute;
-        left: 30%;
-      }
-      .txt {
-        text-align: center;
-      }
-      a:link {
-        color: red;
-      }
-      a:visited {
-        color: green;
-      }
-
-      a:hover {
-        color: hotpink;
-      }
-
-      a:active {
-        color: blue;
-      }
-      .footer {
-        background-color: #f1f1f1;
-        padding: 10px;
-        text-align: center;
-      }
-      @keyframes bground {
-        0% {
-          background: #77e8e8;
-        }
-        20% {
-          background: #7ee980;
-        }
-        40% {
-          background: #d6e28a;
-        }
-        60% {
-          background: #decc85;
-        }
-        80% {
-          background: #91e293;
-        }
-        100% {
-          background: #96e7e7;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="indian-cuisine"><button>Indian Cusine</button></div>
-    <div class="chinese-header"><button>Chinese Cuisine</button></div>
+    <a href="indian_cus.html"
+      ><div class="indian-cuisine">
+        <button><b>Indian Cusine</b></button>
+      </div></a
+    >
+    <a href="chinese_cus.html"
+      ><div class="chinese-header">
+        <button><b>Chinese Cuisine</b></button>
+      </div></a
+    >
     <div class="header">
       <a href="login.html"
         ><button class="Login"><b>Login</b></button></a
@@ -162,14 +38,7 @@
         width="1423px"
       />
       <div style="width: 100%; margin: 0 auto; font-size: 20px">
-        <br /><b
-          style="
-            color: rgba(77, 5, 9, 0.947);
-            border: 1px solid rgb(14, 14, 14);
-            background-color: chartreuse;
-          "
-          >Welcome to Digi Cook
-        </b>
+        <br /><b class="csstext">Welcome to Digi Cook </b>
         <br />
 
         <br />Indulge your culinary curiosity and embark on a flavor-filled
@@ -179,14 +48,7 @@
         novice, our goal is to make your cooking experience delightful,
         inspiring, and satisfying.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Discover the Culinary Tapestry</b
-        ><br />
+        <br /><b class="csstext">Discover the Culinary Tapestry</b><br />
 
         <br />Dive into a world of taste, where each recipe is a masterpiece
         waiting to be created. Our carefully curated collection spans a wide
@@ -194,14 +56,7 @@
         From hearty comfort foods to elegant gourmet dishes, our recipes are
         designed to cater to different tastes and occasions.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Guidance at Your Fingertips</b
-        ><br />
+        <br /><b class="csstext">Guidance at Your Fingertips</b><br />
 
         <br />Cooking should be an enjoyable adventure, not a daunting task. Our
         user-friendly recipes come with step-by-step instructions that guide you
@@ -209,14 +64,7 @@
         lists and clear directions, you can approach every recipe with
         confidence, knowing that you're on the path to success.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Unleash Your Creativity</b
-        ><br />
+        <br /><b class="csstext">Unleash Your Creativity</b><br />
 
         <br />At Digi Cook,we believe in empowering you to put your own spin on
         every dish. Feel free to experiment with ingredients, adjust serving
@@ -224,14 +72,7 @@
         kitchen becomes a canvas, and our recipes are the palette that allows
         you to create culinary art.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Connect with a Community</b
-        ><br />
+        <br /><b class="csstext">Connect with a Community</b><br />
 
         <br />Food is a universal language that brings people together. Join our
         community of passionate food enthusiasts who share your love for cooking
@@ -239,42 +80,21 @@
         cooking tips, and celebrate your kitchen triumphs together. The joy of
         cooking is even sweeter when shared with others.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Visual Feast for the Eyes</b
-        ><br />
+        <br /><b class="csstext">Visual Feast for the Eyes</b><br />
 
         <br />They say you eat with your eyes first, and we couldn't agree more.
         Every recipe is accompanied by mouthwatering images that showcase the
         final dish in all its glory. Immerse yourself in the visual journey of
         culinary creation and let the images spark your inspiration.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Elevate Your Everyday</b
-        ><br />
+        <br /><b class="csstext">Elevate Your Everyday</b><br />
 
         <br />Whether you're cooking for yourself, your family, or hosting a
         special gathering, Digi Cook is here to elevate your everyday meals into
         extraordinary experiences. Turn mundane moments into memorable occasions
         by infusing your cooking with the magic of our recipes.<br />
 
-        <br /><b
-          style="
-            color: rgba(80, 15, 10, 0.947);
-            border: 1px solid black;
-            background-color: chartreuse;
-          "
-          >Start Cooking Today</b
-        ><br />
+        <br /><b class="csstext">Start Cooking Today</b><br />
 
         <br />Your culinary adventure begins now. Explore our diverse range of
         recipes, immerse yourself in the cooking process, and watch as
@@ -308,10 +128,14 @@
           /></a>
         </p>
         <p class="indian-button">
-          <button class="indcuisine-button"><b>Indian cuisine</b></button>
+          <a href="indian_cus.html" title="Indian Cuisine"
+            ><button class="indcuisine-button"><b>Indian cuisine</b></button></a
+          >
         </p>
         <p class="indian-button">
-          <button class="chinese-button"><b>Chinese cuisine</b></button>
+          <a href="chinese_cus.html" title="Chinese Cuisine"
+            ><button class="chinese-button"><b>Chinese cuisine</b></button></a
+          >
         </p>
       </div>
       <br /><br />
@@ -344,7 +168,14 @@
       </div>
     </div>
     <div class="footer">
-      <p>Footer</p>
+      <p id="foot"><a href="https://digi-cook.github.io/Digi/">Home</a></p>
+      <br />
+      <p id="foot"><a href="">Contact Us</a></p>
+      <br />
+      <p id="foot"><a href="About.html">About Us</a></p>
+      <br />
+      <p id="foot"><a href="indian_cus.html">Indian Cuisine</a></p>
+      <p id="foot"><a href="chinese_cus.html">Chinese Cuisine</a></p>
     </div>
   </body>
 </html>
