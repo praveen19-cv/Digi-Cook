@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(129, 197, 218);
+}
+.header {
+  margin: 0;
+  padding: 0;
+  animation-name: bground;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+.logo {
+  vertical-align: middle;
+  padding-right: 1px;
+  text-align: start;
+  font-size: 100%;
+  white-space: nowrap;
+}
+.indian-cuisine {
+  position: absolute;
+  top: 0%;
+  right: 75%;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 0%;
+  padding-top: 0.5%;
+}
+.chinese-header {
+  position: absolute;
+  top: 0%;
+  right: 66%;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 0%;
+  padding-top: 0.5%;
+}
+@keyframes bground {
+  0% {
+    background: #56e4e4;
+  }
+  20% {
+    background: #52e655;
+  }
+  40% {
+    background: #d5ea4f;
+  }
+  60% {
+    background: #ed6a6a;
+  }
+  80% {
+    background: #57e259;
+  }
+  100% {
+    background: #51eaea;
+  }
+}
+
+button {
+  font-size: 12px;
+  padding: 1px 5px;
+  margin: 5px;
+  color: darkorange;
+}
+.psize {
+  background-color: lightgrey;
+  width: 100%;
+  border: 7px solid green;
+  padding: 50px;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  background-image: url("pbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer {
+  background-color: solid green;
+  padding: 10px;
+  text-align: center;
+}
+#foot {
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+  display: inline;
+}
