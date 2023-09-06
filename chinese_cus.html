@@ -1,507 +1,720 @@
 <html>
-<head>
-<title>
-Digi Cook
-</title>
-<link rel="icon" type="image/x-icon" href="logo.png">
-<style >
-    
-    button{
-        font-size: 12px;
-        padding: 1px 5px;
-        margin: 5px;
-    }
-    .psize{
-        font-size: 22px;
-    }
-</style>
-</head>
-<body>
-<p style="font-size:40px">
-<img src="logo.png" width="30" height="30">
-<strong>
-Digi Cook
-</strong>
-</p>
-<img
-src="chin.jpg" 
-alt="CHINESE CUSIENE"
-height="600" width="1500">
-<h1>WELCOME TO CHINESE CUISINE</h1>
-<button onclick="toggleContent('Springroll')"><h2>Spring roll</h2></button> <br>
-<div id="SpringrollContent" style="display: block;" class="psize"> <div style="width:100%;margin:0;">Crispy and flavorful, spring rolls are delectable appetizers featuring a delightful blend of vegetables and paneer, wrapped in thin sheets and deep-fried to perfection.</div>
-    <button onclick="toggleContent('Paneerspringroll')"><h2>Paneer Springroll</h2></button>
-    <div id="PaneerspringrollContent"  style="display: block;width: 100%"class="psize">
+  <head>
+    <title>Digi Cook</title>
+    <link rel="icon" type="image/x-icon" href="images.jpeg" />
+    <link rel="stylesheet" href="ind_cus.css" />
+  </head>
+  <body>
+    <a href="indian_cus.html"
+      ><div class="indian-cuisine">
+        <button><b>Indian Cusine</b></button>
+      </div></a
+    >
+    <a href="chinese_cus.html"
+      ><div class="chinese-header">
+        <button><b>Chinese Cuisine</b></button>
+      </div></a
+    >
+    <div class="header">
+      <a href="https://digi-cook.github.io/Digi/" title="Digi Cook">
+        <img
+          class="logo"
+          src="recipe logo.png"
+          alt="Logo"
+          style="height: 40px; width: 40px"
+        />
+      </a>
+      <span class="heading-name"><b>Digi Cook</b></span>
+    </div>
+    <img
+      src="D:\digicook\chinese cuisine.jpg"
+      alt="CHINESE CUSIENE"
+      height="600"
+      width="1500"
+    />
+    <h1
+      style="
+        color: rgb(28, 27, 26);
+        text-align: center;
+        border: solid 3px black;
+        background-color: #e8a426e1;
+      "
+    >
+      WELCOME TO CHINESE CUISINE
+    </h1>
+    <button onclick="toggleContent('Springroll')"><h2>Spring roll</h2></button>
+    <br />
+    <div id="SpringrollContent" style="display: block">
+      <div style="width: 100%; margin: 0">
+        Crispy and flavorful, spring rolls are delectable appetizers featuring a
+        delightful blend of vegetables and paneer, wrapped in thin sheets and
+        deep-fried to perfection.
+      </div>
+      <button onclick="toggleContent('Paneerspringroll')">
+        <h2>Paneer Springroll</h2>
+      </button>
+      <div
+        id="PaneerspringrollContent"
+        style="display: block; width: 100%"
+        class="psize"
+      >
         <h2>Ingredients:</h2>
         <ul>
-            <li>200g paneer, crumbled or finely chopped</li>
-            <li>1 cup finely chopped mixed vegetables (carrots, bell peppers, cabbage, etc.)</li>
-            <li>1 small onion, finely chopped</li>
-            <li>2-3 cloves of garlic, minced</li>
-            <li>1 teaspoon grated ginger</li>
-            <li>1 teaspoon soy sauce</li>
-            <li>1 teaspoon green chili sauce (adjust to taste)</li>
-            <li>1 teaspoon vinegar</li>
-            <li>1/2 teaspoon black pepper powder</li>
-            <li>Salt to taste</li>
-            <li>2 tablespoons oil</li>
-            <li>Chopped cilantro (coriander leaves) for garnish</li>
+          <li>200g paneer, crumbled or finely chopped</li>
+          <li>
+            1 cup finely chopped mixed vegetables (carrots, bell peppers,
+            cabbage, etc.)
+          </li>
+          <li>1 small onion, finely chopped</li>
+          <li>2-3 cloves of garlic, minced</li>
+          <li>1 teaspoon grated ginger</li>
+          <li>1 teaspoon soy sauce</li>
+          <li>1 teaspoon green chili sauce (adjust to taste)</li>
+          <li>1 teaspoon vinegar</li>
+          <li>1/2 teaspoon black pepper powder</li>
+          <li>Salt to taste</li>
+          <li>2 tablespoons oil</li>
+          <li>Chopped cilantro (coriander leaves) for garnish</li>
         </ul>
-        
-        <p>These ingredients will help you create delicious Paneer Spring Rolls. You can adjust the quantities and spices according to your taste preferences.</p>
-    
-        <h2>Steps:</h2>
-        <ol>
-            <li>
-                <h3>Prepare the Filling:</h3>
-                <p>
-                    - Heat 2 tablespoons of oil in a pan over medium heat.<br>
-                    - Add minced garlic and grated ginger. Sauté for a minute until fragrant.<br>
-                    - Add chopped onions and sauté until they turn translucent.<br>
-                    - Add the chopped mixed vegetables and cook for a few minutes until they start to soften but remain crisp.<br>
-                    - Add crumbled paneer to the pan and mix well with the vegetables.<br>
-                    - Add soy sauce, green chili sauce, vinegar, black pepper powder, and salt. Mix everything thoroughly and cook for a few more minutes. The filling should be well-seasoned and flavorful.<br>
-                    - Turn off the heat and let the filling cool down a bit. Add chopped cilantro and mix.
-                </p>
-            </li>
-            <li>
-                <h3>Assemble the Spring Rolls:</h3>
-                <p>
-                    - Take a spring roll wrapper and place it on a clean surface in a diamond shape (one corner facing you).<br>
-                    - Place a spoonful of the paneer and vegetable filling near the bottom corner of the wrapper.<br>
-                    - Fold the bottom corner over the filling and roll it up tightly halfway.<br>
-                    - Fold the sides of the wrapper towards the center.<br>
-                    - Continue rolling the wrapper upwards, making sure it's tightly wrapped. Use a mixture of all-purpose flour and water to seal the edges of the wrapper.
-                </p>
-            </li>
-            <li>
-                <h3>Fry the Spring Rolls:</h3>
-                <p>
-                    - Heat oil in a deep frying pan or wok over medium heat. The oil should be hot but not smoking.<br>
-                    - Carefully place the sealed spring rolls into the hot oil, seam side down.<br>
-                    - Fry until they turn golden brown and crispy on all sides. Make sure to turn them gently for even frying.<br>
-                    - Once fried, remove the spring rolls from the oil and place them on a paper towel-lined plate to remove excess oil.
-                </p>
-            </li>
-            <li>
-                <h3>Serve:</h3>
-                <p>
-                    - Paneer spring rolls are best enjoyed hot and crispy. Serve them with your choice of dipping sauce, such as sweet chili sauce, tomato ketchup, or mint chutney.
-                </p>
-            </li>
-        </ol>
-    </div>
-    <button onclick="toggleContent('chickenspringroll')"><h2>Chicken Springroll</h2></button>
-    <div id="chickenspringrollContent"  style="display: block; "class="psize">
-        <h2>Ingredients:</h2>
-            <ul>
-                <li>200g cooked chicken, shredded</li>
-                <li>1 cup finely chopped mixed vegetables (carrots, bell peppers, cabbage, etc.)</li>
-                <li>1 small onion, finely chopped</li>
-                <li>2-3 cloves of garlic, minced</li>
-                <li>1 teaspoon grated ginger</li>
-                <li>1 teaspoon soy sauce</li>
-                <li>1 teaspoon oyster sauce</li>
-                <li>1/2 teaspoon black pepper powder</li>
-                <li>Salt to taste</li>
-                <li>2 tablespoons oil</li>
-                <li>Spring roll wrappers (available in Asian grocery stores)</li>
-                <li>All-purpose flour mixed with water (for sealing the rolls)</li>
-                <li>Oil for frying</li>
-            </ul>
-            
-            <p>These ingredients will help you create delicious Chicken Spring Rolls. You can adjust the quantities and spices according to your taste preferences.</p>
-            <h2>Steps:</h2>
-            <ol>
-                <li>
-                    <h3>Prepare the Filling:</h3>
-                    <p>
-                        - Heat 2 tablespoons of oil in a pan over medium heat.<br>
-                        - Add minced garlic and grated ginger. Sauté for a minute until fragrant.<br>
-                        - Add finely chopped chicken and cook until it's no longer pink.<br>
-                        - Add chopped vegetables (carrots, cabbage, bell peppers, etc.) and cook until slightly softened.<br>
-                        - Season with soy sauce, oyster sauce, and black pepper. Mix well and cook for a few minutes.<br>
-                        - Turn off the heat and let the filling cool down.<br>
-                    </p>
-                </li>
-                <li>
-                    <h3>Assemble the Spring Rolls:</h3>
-                    <p>
-                        - Take a spring roll wrapper and place it on a clean surface in a diamond shape (one corner facing you).<br>
-                        - Place a spoonful of the chicken and vegetable filling near the bottom corner of the wrapper.<br>
-                        - Fold the bottom corner over the filling and roll it up tightly halfway.<br>
-                        - Fold the sides of the wrapper towards the center.<br>
-                        - Continue rolling the wrapper upwards, making sure it's tightly wrapped. Use a mixture of all-purpose flour and water to seal the edges of the wrapper.
-                    </p>
-                </li>
-                <li>
-                    <h3>Fry the Spring Rolls:</h3>
-                    <p>
-                        - Heat oil in a deep frying pan or wok over medium heat. The oil should be hot but not smoking.<br>
-                        - Carefully place the sealed spring rolls into the hot oil, seam side down.<br>
-                        - Fry until they turn golden brown and crispy on all sides. Turn them gently for even frying.<br>
-                        - Once fried, remove the spring rolls from the oil and place them on a paper towel-lined plate to remove excess oil.
-                    </p>
-                </li>
-                <li>
-                    <h3>Serve:</h3>
-                    <p>
-                        - Chicken spring rolls are best enjoyed hot and crispy. Serve them with your favorite dipping sauce, such as sweet chili sauce or garlic sauce.
-                    </p>
-                </li>
-            </ol>
-    </div>
-   
-</div>
-<button onclick="toggleContent('Dumplings')"><h2>Dumplings</h2></button> <br>
-<div id="DumplingsContent" style="display: block;" class="psize">
-    Small pieces of dough filled with various ingredients, often served boiled, steamed, or fried.
-    <h2>Ingredients:</h2>
-    <ul>
-        <li>1 cup all-purpose flour<br></li>
-        <li>1/2 cup water (approximately)<br></li>
-        <li>Filling of your choice (ground meat, vegetables, seafood, etc.)<br></li>
-        <li>2 cloves garlic, minced<br></li>
-        <li>1 teaspoon ginger, grated<br></li>
-        <li>2 tablespoons soy sauce<br></li>
-        <li>1 tablespoon sesame oil<br></li>
-        <li>1/2 teaspoon salt (adjust to taste)<br></li>
-        <li>1/4 teaspoon black pepper<br></li>
-        <li>Chopped scallions or chives<br></li>
-    </ul>
-    <h2>Steps:</h2>
-            <ol>
-                <li>
-                    <h3>Prepare the Filling:</h3>
-                    <p>
-                        - In a mixing bowl, combine minced meat (pork, chicken, or shrimp) with finely chopped vegetables (cabbage, mushrooms, scallions).<br>
-                        - Add minced garlic, grated ginger, soy sauce, sesame oil, and a pinch of salt and pepper to the mixture. Mix well.<br>
-                        - Let the filling mixture sit for about 15-20 minutes to marinate and develop flavor.
-                    </p>
-                </li>
-                <li>
-                    <h3>Wrap the Dumplings:</h3>
-                    <p>
-                        - Take a dumpling wrapper and place a small spoonful of the filling in the center.<br>
-                        - Dip your finger in water and wet the edges of the wrapper to help seal the dumpling.<br>
-                        - Fold the wrapper in half to form a half-moon shape, then pinch and pleat the edges to seal. Repeat with remaining wrappers and filling.
-                    </p>
-                </li>
-                <li>
-                    <h3>Cook the Dumplings:</h3>
-                    <p>
-                        - Boiling Method:<br>
-                        - Bring a pot of water to a boil. Add dumplings and cook until they float to the surface and the filling is cooked through (about 5-7 minutes).<br>
-                        - Remove the dumplings with a slotted spoon and serve.<br>
-                        <br>
-                        - Pan-Frying Method (Potstickers):<br>
-                        - Heat a non-stick skillet with oil over medium heat. Add dumplings and cook until the bottoms are golden brown.<br>
-                        - Carefully pour in a small amount of water and immediately cover the skillet to steam the dumplings for a few minutes.<br>
-                        - Once the water has evaporated, the dumplings will continue to pan-fry until the bottoms are crispy.
-                    </p>
-                </li>
-                <li>
-                    <h3>Serve:</h3>
-                    <p>
-                        - Serve the dumplings hot with dipping sauce, such as soy sauce, vinegar, and chili oil.<br>
-                        - Enjoy your delicious homemade dumplings!
-                    </p>
-                </li>
-            </ol>
-    
-</div>
-<button onclick="toggleContent('friedrice')"><h2>Fried Rice</h2></button> <br>
-<div id="friedriceContent" style="display: block;" class="psize">
-    Cooked rice stir-fried with a variety of vegetables, meats, and often eggs.
-    <button onclick="toggleContent('chickenfriedrice')"><h2>Chicken Fried rice</h2></button>
-    <div id="chickenfriedriceContent" style="display: block;" class="psize">
-        
-        
-            <h2>Ingredients:</h2>
-            
-            <p>
-                - 2 cups cooked and cooled rice<br>
-                - 1 cup cooked and diced chicken<br>
-                - 1 cup mixed vegetables (carrots, peas, corn, and bell peppers), diced<br>
-                - 2 eggs, beaten<br>
-                - 3 tablespoons oil<br>
-                - 3 cloves of garlic, minced<br>
-                - 1 teaspoon grated ginger<br>
-                - 2 tablespoons soy sauce<br>
-                - 1 tablespoon oyster sauce<br>
-                - 1 teaspoon sesame oil<br>
-                - Salt and pepper to taste<br>
-                - Chopped green onions for garnish
-            </p>
-            <h2>Steps:</h2>
-            <ol>
-                <li>
-                    <h3>Cook the Rice:</h3>
-                    <p>
-                        - Wash and rinse the rice thoroughly.<br>
-                        - In a pot, bring water to a boil and add the rice. Cook until the rice is fully cooked. Drain and let it cool.<br>
-                        - Spread the cooked rice on a tray to let it cool and dry out slightly. This helps prevent the rice grains from sticking together.
-                    </p>
-                </li>
-                <li>
-                    <h3>Cook the Chicken:</h3>
-                    <p>
-                        - Marinate boneless chicken pieces with soy sauce, ginger-garlic paste, and a pinch of salt.<br>
-                        - Heat oil in a pan over medium-high heat.<br>
-                        - Add the marinated chicken and cook until it's no longer pink and is cooked through. Set aside.
-                    </p>
-                </li>
-                <li>
-                    <h3>Sauté Vegetables:</h3>
-                    <p>
-                        - Heat oil in a wok or large skillet over high heat.<br>
-                        - Add chopped garlic and sauté until fragrant.<br>
-                        - Add diced onions and cook until translucent.<br>
-                        - Stir in finely chopped carrots, peas, and any other vegetables of your choice.<br>
-                        - Push the vegetables to the side of the wok to create space for the eggs.
-                    </p>
-                </li>
-                <li>
-                    <h3>Cook the Eggs:</h3>
-                    <p>
-                        - Crack eggs into the space you created in the wok for the eggs.<br>
-                        - Scramble the eggs with a spatula until they are cooked but still slightly runny.<br>
-                        - Mix the cooked eggs with the sautéed vegetables.
-                    </p>
-                </li>
-                <li>
-                    <h3>Add Rice and Chicken:</h3>
-                    <p>
-                        - Add the cooked and cooled rice to the wok.<br>
-                        - Add the cooked chicken pieces.<br>
-                        - Pour soy sauce over the rice and chicken to season. Toss everything together gently to combine.
-                    </p>
-                </li>
-                <li>
-                    <h3>Season and Serve:</h3>
-                    <p>
-                        - Season the fried rice with salt, pepper, and any other desired seasonings.<br>
-                        - Garnish with chopped green onions and fresh cilantro.<br>
-                        - Serve the delicious chicken fried rice hot and enjoy!
-                    </p>
-                </li>
-            </ol>
-    </div>
-    <button onclick="toggleContent('eggfriedrice')"><h2>Egg Fried rice</h2></button>
-    <div id="eggfriedriceContent"  style="display: block;width: 100%" class="psize">
-        <h2>Ingredients:</h2>
-        <ul>
-            <li>2 cups cooked rice, preferably leftover and cooled<br></li>
-            <li>2 eggs, lightly beaten<br></li>
-            <li>1 cup mixed vegetables (peas, carrots, bell peppers, etc.), finely chopped<br></li>
-            <li>1 small onion, finely chopped<br></li>
-            <li>3-4 cloves of garlic, minced<br></li>
-            <li>1 tablespoon soy sauce<br></li>
-            <li>1 teaspoon oyster sauce (optional)<br></li>
-            <li>1/2 teaspoon sesame oil<br></li>
-            <li>1/2 teaspoon white pepper powder<br></li>
-            <li>Salt to taste<br></li>
-            <li>2 tablespoons cooking oil<br></li>
-            <li>Chopped green onions for garnish<br></li>
-        </ul>
-        <h2>Steps:</h2>
-            <ol>
-                <li>
-                    <h3>Prepare the Ingredients:</h3>
-                    <p>
-                        - Cook the rice and let it cool. It's best to use leftover rice that's been refrigerated for a few hours or overnight.<br>
-                        - Beat the eggs and finely chop the mixed vegetables and onion.<br>
-                        - Mince the garlic and chop the green onions for garnishing.<br>
-                    </p>
-                </li>
-                <li>
-                    <h3>Stir-Fry the Eggs:</h3>
-                    <p>
-                        - Heat a tablespoon of oil in a wok or large skillet over medium heat.<br>
-                        - Pour in the beaten eggs and scramble them until cooked. Remove from the wok and set aside.<br>
-                    </p>
-                </li>
-                <li>
-                    <h3>Stir-Fry the Vegetables:</h3>
-                    <p>
-                        - In the same wok, add another tablespoon of oil if needed.<br>
-                        - Add minced garlic and sauté until fragrant.<br>
-                        - Add chopped onion and mixed vegetables. Stir-fry until the vegetables are tender yet crisp.<br>
-                    </p>
-                </li>
-                <li>
-                    <h3>Add Rice and Seasonings:</h3>
-                    <p>
-                        - Push the vegetables to the side of the wok and add the cooled cooked rice to the empty space.<br>
-                        - Drizzle soy sauce, oyster sauce (if using), sesame oil, and white pepper powder over the rice.<br>
-                        - Mix everything together and let the rice cook for a few minutes.<br>
-                    </p>
-                </li>
-                <li>
-                    <h3>Combine and Garnish:</h3>
-                    <p>
-                        - Add the scrambled eggs back to the wok with the rice and vegetables.<br>
-                        - Toss everything together until well combined and heated through.<br>
-                        - Taste and adjust the seasoning with salt and more soy sauce if needed.<br>
-                        - Garnish with chopped green onions.<br>
-                    </p>
-                </li>
-                <li>
-                    <h3>Serve:</h3>
-                    <p>
-                        - Your delicious Egg Fried Rice is ready to be served. Enjoy it as a flavorful and satisfying meal!<br>
-                    </p>
-                </li>
-            </ol>
-    </div>
-    <button onclick="toggleContent('Vegfriedrice')"><h2>Veg Fried rice</h2></button>
-    <div id="VegfriedriceContent"  style="display: block; "class="psize">
-        <h2>Ingredients:</h2>
-        <ul>
-            <li>Cooked rice<br></li>
-            <li>Mixed vegetables (carrots, peas, corn, bell peppers, etc.)<br></li>
-            <li>Onion<br></li>
-            <li>Garlic<br></li>
-            <li>Ginger<br></li>
-            <li>Soy sauce<br></li>
-            <li>Sesame oil<br></li>
-            <li>Vegetable oil<br></li>
-            <li>Salt<br></li>
-            <li>Pepper<br></li>
-            <li>Optional: Eggs (for scrambled egg in the fried rice)<br></li>
-            <li>Optional: Green onions (for garnish)<br></li>
-          </ul>
-          <h2>Steps:</h2>
-          <ol>
-            <li>Cook the rice and let it cool.</li>
-            <li>Chop the mixed vegetables, onions, garlic, and ginger.</li>
-            <li>Heat vegetable oil in a pan over medium heat.</li>
-            <li>Add chopped onions, garlic, and ginger. Sauté until fragrant.</li>
-            <li>Add the mixed vegetables and stir-fry until they are tender.</li>
-            <li>Push the vegetables to the side of the pan and scramble the eggs (if using) on the other side.</li>
-            <li>Combine the scrambled eggs with the vegetables.</li>
-            <li>Add the cooled rice to the pan. Break up any clumps.</li>
-            <li>Drizzle soy sauce and sesame oil over the rice. Mix well to distribute the flavors.</li>
-            <li>Season with salt and pepper according to your taste.</li>
-            <li>Stir-fry everything together for a few minutes until the rice is heated through.</li>
-            <li>Optional: Garnish with chopped green onions.</li>
-            <li>Remove from heat and serve hot.</li>
-          </ol>
-          
-    </div>
-   
-</div>
 
-<button onclick="toggleContent('Chowmein')"><h2>Chow mein</h2></button> <br>
-<div id="ChowmeinContent" style="display: block;" class="psize">
-    Chowmein is a popular and flavorful dish in Asian cuisine, particularly in Chinese and Indian culinary traditions. 
-    <button onclick="toggleContent('mein')"><h2>Chicken chowmein</h2></button>
-    <div id="meinContent"  style="display: block; "class="psize">
-        <h2>Ingredients:</h2>
-<ul>
-  <li>Chicken breast, sliced</li>
-  <li>Chowmein noodles</li>
-  <li>Assorted vegetables (carrots, cabbage, bell peppers, etc.), julienned</li>
-  <li>Onion, thinly sliced</li>
-  <li>Garlic, minced</li>
-  <li>Ginger, minced</li>
-  <li>Soy sauce</li>
-  <li>Oyster sauce</li>
-  <li>Chicken broth</li>
-  <li>Vegetable oil</li>
-  <li>Salt and pepper</li>
-  <li><br></li>
-  <li>Optional:</li>
-  <ul>
-    <li>Bean sprouts</li>
-    <li>Mushrooms</li>
-    <li>Green onions, chopped (for garnish)</li>
-    <li>Chili sauce or sriracha (for some heat)</li>
-  </ul>
-</ul>
+        <p>
+          These ingredients will help you create delicious Paneer Spring Rolls.
+          You can adjust the quantities and spices according to your taste
+          preferences.
+        </p>
+
         <h2>Steps:</h2>
         <ol>
-            <li>Boil water in a large pot and cook chowmein noodles according to package instructions.</li>
-            <li>Drain and rinse the noodles under cold water to stop the cooking process. Set aside.</li>
-            <li>In a bowl, marinate boneless chicken pieces with soy sauce, ginger, garlic, and a pinch of salt. Let it sit for about 15 minutes.</li>
-            <li>Heat vegetable oil in a wok or large pan over medium-high heat.</li>
-            <li>Add marinated chicken and stir-fry until cooked through. Remove from the wok and set aside.</li>
-            <li>In the same wok, add more oil if needed. Add sliced onions, bell peppers, carrots, and any other desired vegetables.</li>
-            <li>Saute the vegetables until they start to soften. You can also add a pinch of salt and pepper for seasoning.</li>
-            <li>Push the vegetables to one side of the wok and crack eggs into the empty space.</li>
-            <li>Scramble the eggs and let them cook until they are fully set.</li>
-            <li>Add back the cooked chicken to the wok with the vegetables and eggs.</li>
-            <li>Now, add the cooked chowmein noodles to the wok.</li>
-            <li>Pour soy sauce and oyster sauce over the noodles and toss everything together.</li>
-            <li>Stir-fry for a few minutes until the noodles are heated through and well coated with the sauces.</li>
-            <li>Adjust seasoning with more soy sauce or salt and pepper if needed.</li>
-            <li>Finish with a drizzle of sesame oil for extra flavor.</li>
-            <li>Transfer the chicken chowmein to serving plates and garnish with chopped green onions.</li>
-          </ol>    </div>
-    <button onclick="toggleContent('vegmein')"><h2>Veg chowmein</h2></button>
-    <div id="vegmeinContent"  style="display: block; "class="psize">
+          <li>
+            <h3>Prepare the Filling:</h3>
+            <p>
+              - Heat 2 tablespoons of oil in a pan over medium heat.<br />
+              - Add minced garlic and grated ginger. Sauté for a minute until
+              fragrant.<br />
+              - Add chopped onions and sauté until they turn translucent.<br />
+              - Add the chopped mixed vegetables and cook for a few minutes
+              until they start to soften but remain crisp.<br />
+              - Add crumbled paneer to the pan and mix well with the
+              vegetables.<br />
+              - Add soy sauce, green chili sauce, vinegar, black pepper powder,
+              and salt. Mix everything thoroughly and cook for a few more
+              minutes. The filling should be well-seasoned and flavorful.<br />
+              - Turn off the heat and let the filling cool down a bit. Add
+              chopped cilantro and mix.
+            </p>
+          </li>
+          <li>
+            <h3>Assemble the Spring Rolls:</h3>
+            <p>
+              - Take a spring roll wrapper and place it on a clean surface in a
+              diamond shape (one corner facing you).<br />
+              - Place a spoonful of the paneer and vegetable filling near the
+              bottom corner of the wrapper.<br />
+              - Fold the bottom corner over the filling and roll it up tightly
+              halfway.<br />
+              - Fold the sides of the wrapper towards the center.<br />
+              - Continue rolling the wrapper upwards, making sure it's tightly
+              wrapped. Use a mixture of all-purpose flour and water to seal the
+              edges of the wrapper.
+            </p>
+          </li>
+          <li>
+            <h3>Fry the Spring Rolls:</h3>
+            <p>
+              - Heat oil in a deep frying pan or wok over medium heat. The oil
+              should be hot but not smoking.<br />
+              - Carefully place the sealed spring rolls into the hot oil, seam
+              side down.<br />
+              - Fry until they turn golden brown and crispy on all sides. Make
+              sure to turn them gently for even frying.<br />
+              - Once fried, remove the spring rolls from the oil and place them
+              on a paper towel-lined plate to remove excess oil.
+            </p>
+          </li>
+          <li>
+            <h3>Serve:</h3>
+            <p>
+              - Paneer spring rolls are best enjoyed hot and crispy. Serve them
+              with your choice of dipping sauce, such as sweet chili sauce,
+              tomato ketchup, or mint chutney.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <button onclick="toggleContent('chickenspringroll')">
+        <h2>Chicken Springroll</h2>
+      </button>
+      <div id="chickenspringrollContent" style="display: block" class="psize">
+        <h2>Ingredients:</h2>
+        <ul>
+          <li>200g cooked chicken, shredded</li>
+          <li>
+            1 cup finely chopped mixed vegetables (carrots, bell peppers,
+            cabbage, etc.)
+          </li>
+          <li>1 small onion, finely chopped</li>
+          <li>2-3 cloves of garlic, minced</li>
+          <li>1 teaspoon grated ginger</li>
+          <li>1 teaspoon soy sauce</li>
+          <li>1 teaspoon oyster sauce</li>
+          <li>1/2 teaspoon black pepper powder</li>
+          <li>Salt to taste</li>
+          <li>2 tablespoons oil</li>
+          <li>Spring roll wrappers (available in Asian grocery stores)</li>
+          <li>All-purpose flour mixed with water (for sealing the rolls)</li>
+          <li>Oil for frying</li>
+        </ul>
+
+        <p>
+          These ingredients will help you create delicious Chicken Spring Rolls.
+          You can adjust the quantities and spices according to your taste
+          preferences.
+        </p>
+        <h2>Steps:</h2>
+        <ol>
+          <li>
+            <h3>Prepare the Filling:</h3>
+            <p>
+              - Heat 2 tablespoons of oil in a pan over medium heat.<br />
+              - Add minced garlic and grated ginger. Sauté for a minute until
+              fragrant.<br />
+              - Add finely chopped chicken and cook until it's no longer
+              pink.<br />
+              - Add chopped vegetables (carrots, cabbage, bell peppers, etc.)
+              and cook until slightly softened.<br />
+              - Season with soy sauce, oyster sauce, and black pepper. Mix well
+              and cook for a few minutes.<br />
+              - Turn off the heat and let the filling cool down.<br />
+            </p>
+          </li>
+          <li>
+            <h3>Assemble the Spring Rolls:</h3>
+            <p>
+              - Take a spring roll wrapper and place it on a clean surface in a
+              diamond shape (one corner facing you).<br />
+              - Place a spoonful of the chicken and vegetable filling near the
+              bottom corner of the wrapper.<br />
+              - Fold the bottom corner over the filling and roll it up tightly
+              halfway.<br />
+              - Fold the sides of the wrapper towards the center.<br />
+              - Continue rolling the wrapper upwards, making sure it's tightly
+              wrapped. Use a mixture of all-purpose flour and water to seal the
+              edges of the wrapper.
+            </p>
+          </li>
+          <li>
+            <h3>Fry the Spring Rolls:</h3>
+            <p>
+              - Heat oil in a deep frying pan or wok over medium heat. The oil
+              should be hot but not smoking.<br />
+              - Carefully place the sealed spring rolls into the hot oil, seam
+              side down.<br />
+              - Fry until they turn golden brown and crispy on all sides. Turn
+              them gently for even frying.<br />
+              - Once fried, remove the spring rolls from the oil and place them
+              on a paper towel-lined plate to remove excess oil.
+            </p>
+          </li>
+          <li>
+            <h3>Serve:</h3>
+            <p>
+              - Chicken spring rolls are best enjoyed hot and crispy. Serve them
+              with your favorite dipping sauce, such as sweet chili sauce or
+              garlic sauce.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <button onclick="toggleContent('Dumplings')"><h2>Dumplings</h2></button>
+    <br />
+    <div id="DumplingsContent" style="display: block" class="psize">
+      Small pieces of dough filled with various ingredients, often served
+      boiled, steamed, or fried.
+      <h2>Ingredients:</h2>
+      <ul>
+        <li>1 cup all-purpose flour<br /></li>
+        <li>1/2 cup water (approximately)<br /></li>
+        <li>
+          Filling of your choice (ground meat, vegetables, seafood, etc.)<br />
+        </li>
+        <li>2 cloves garlic, minced<br /></li>
+        <li>1 teaspoon ginger, grated<br /></li>
+        <li>2 tablespoons soy sauce<br /></li>
+        <li>1 tablespoon sesame oil<br /></li>
+        <li>1/2 teaspoon salt (adjust to taste)<br /></li>
+        <li>1/4 teaspoon black pepper<br /></li>
+        <li>Chopped scallions or chives<br /></li>
+      </ul>
+      <h2>Steps:</h2>
+      <ol>
+        <li>
+          <h3>Prepare the Filling:</h3>
+          <p>
+            - In a mixing bowl, combine minced meat (pork, chicken, or shrimp)
+            with finely chopped vegetables (cabbage, mushrooms, scallions).<br />
+            - Add minced garlic, grated ginger, soy sauce, sesame oil, and a
+            pinch of salt and pepper to the mixture. Mix well.<br />
+            - Let the filling mixture sit for about 15-20 minutes to marinate
+            and develop flavor.
+          </p>
+        </li>
+        <li>
+          <h3>Wrap the Dumplings:</h3>
+          <p>
+            - Take a dumpling wrapper and place a small spoonful of the filling
+            in the center.<br />
+            - Dip your finger in water and wet the edges of the wrapper to help
+            seal the dumpling.<br />
+            - Fold the wrapper in half to form a half-moon shape, then pinch and
+            pleat the edges to seal. Repeat with remaining wrappers and filling.
+          </p>
+        </li>
+        <li>
+          <h3>Cook the Dumplings:</h3>
+          <p>
+            - Boiling Method:<br />
+            - Bring a pot of water to a boil. Add dumplings and cook until they
+            float to the surface and the filling is cooked through (about 5-7
+            minutes).<br />
+            - Remove the dumplings with a slotted spoon and serve.<br />
+            <br />
+            - Pan-Frying Method (Potstickers):<br />
+            - Heat a non-stick skillet with oil over medium heat. Add dumplings
+            and cook until the bottoms are golden brown.<br />
+            - Carefully pour in a small amount of water and immediately cover
+            the skillet to steam the dumplings for a few minutes.<br />
+            - Once the water has evaporated, the dumplings will continue to
+            pan-fry until the bottoms are crispy.
+          </p>
+        </li>
+        <li>
+          <h3>Serve:</h3>
+          <p>
+            - Serve the dumplings hot with dipping sauce, such as soy sauce,
+            vinegar, and chili oil.<br />
+            - Enjoy your delicious homemade dumplings!
+          </p>
+        </li>
+      </ol>
+    </div>
+    <button onclick="toggleContent('friedrice')"><h2>Fried Rice</h2></button>
+    <br />
+    <div id="friedriceContent" style="display: block">
+      Cooked rice stir-fried with a variety of vegetables, meats, and often
+      eggs.
+      <button onclick="toggleContent('chickenfriedrice')">
+        <h2>Chicken Fried rice</h2>
+      </button>
+      <div id="chickenfriedriceContent" style="display: block" class="psize">
+        <h2>Ingredients:</h2>
+
+        <p>
+          - 2 cups cooked and cooled rice<br />
+          - 1 cup cooked and diced chicken<br />
+          - 1 cup mixed vegetables (carrots, peas, corn, and bell peppers),
+          diced<br />
+          - 2 eggs, beaten<br />
+          - 3 tablespoons oil<br />
+          - 3 cloves of garlic, minced<br />
+          - 1 teaspoon grated ginger<br />
+          - 2 tablespoons soy sauce<br />
+          - 1 tablespoon oyster sauce<br />
+          - 1 teaspoon sesame oil<br />
+          - Salt and pepper to taste<br />
+          - Chopped green onions for garnish
+        </p>
+        <h2>Steps:</h2>
+        <ol>
+          <li>
+            <h3>Cook the Rice:</h3>
+            <p>
+              - Wash and rinse the rice thoroughly.<br />
+              - In a pot, bring water to a boil and add the rice. Cook until the
+              rice is fully cooked. Drain and let it cool.<br />
+              - Spread the cooked rice on a tray to let it cool and dry out
+              slightly. This helps prevent the rice grains from sticking
+              together.
+            </p>
+          </li>
+          <li>
+            <h3>Cook the Chicken:</h3>
+            <p>
+              - Marinate boneless chicken pieces with soy sauce, ginger-garlic
+              paste, and a pinch of salt.<br />
+              - Heat oil in a pan over medium-high heat.<br />
+              - Add the marinated chicken and cook until it's no longer pink and
+              is cooked through. Set aside.
+            </p>
+          </li>
+          <li>
+            <h3>Sauté Vegetables:</h3>
+            <p>
+              - Heat oil in a wok or large skillet over high heat.<br />
+              - Add chopped garlic and sauté until fragrant.<br />
+              - Add diced onions and cook until translucent.<br />
+              - Stir in finely chopped carrots, peas, and any other vegetables
+              of your choice.<br />
+              - Push the vegetables to the side of the wok to create space for
+              the eggs.
+            </p>
+          </li>
+          <li>
+            <h3>Cook the Eggs:</h3>
+            <p>
+              - Crack eggs into the space you created in the wok for the
+              eggs.<br />
+              - Scramble the eggs with a spatula until they are cooked but still
+              slightly runny.<br />
+              - Mix the cooked eggs with the sautéed vegetables.
+            </p>
+          </li>
+          <li>
+            <h3>Add Rice and Chicken:</h3>
+            <p>
+              - Add the cooked and cooled rice to the wok.<br />
+              - Add the cooked chicken pieces.<br />
+              - Pour soy sauce over the rice and chicken to season. Toss
+              everything together gently to combine.
+            </p>
+          </li>
+          <li>
+            <h3>Season and Serve:</h3>
+            <p>
+              - Season the fried rice with salt, pepper, and any other desired
+              seasonings.<br />
+              - Garnish with chopped green onions and fresh cilantro.<br />
+              - Serve the delicious chicken fried rice hot and enjoy!
+            </p>
+          </li>
+        </ol>
+      </div>
+      <button onclick="toggleContent('eggfriedrice')">
+        <h2>Egg Fried rice</h2>
+      </button>
+      <div
+        id="eggfriedriceContent"
+        style="display: block; width: 100%"
+        class="psize"
+      >
+        <h2>Ingredients:</h2>
+        <ul>
+          <li>2 cups cooked rice, preferably leftover and cooled<br /></li>
+          <li>2 eggs, lightly beaten<br /></li>
+          <li>
+            1 cup mixed vegetables (peas, carrots, bell peppers, etc.), finely
+            chopped<br />
+          </li>
+          <li>1 small onion, finely chopped<br /></li>
+          <li>3-4 cloves of garlic, minced<br /></li>
+          <li>1 tablespoon soy sauce<br /></li>
+          <li>1 teaspoon oyster sauce (optional)<br /></li>
+          <li>1/2 teaspoon sesame oil<br /></li>
+          <li>1/2 teaspoon white pepper powder<br /></li>
+          <li>Salt to taste<br /></li>
+          <li>2 tablespoons cooking oil<br /></li>
+          <li>Chopped green onions for garnish<br /></li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li>
+            <h3>Prepare the Ingredients:</h3>
+            <p>
+              - Cook the rice and let it cool. It's best to use leftover rice
+              that's been refrigerated for a few hours or overnight.<br />
+              - Beat the eggs and finely chop the mixed vegetables and onion.<br />
+              - Mince the garlic and chop the green onions for garnishing.<br />
+            </p>
+          </li>
+          <li>
+            <h3>Stir-Fry the Eggs:</h3>
+            <p>
+              - Heat a tablespoon of oil in a wok or large skillet over medium
+              heat.<br />
+              - Pour in the beaten eggs and scramble them until cooked. Remove
+              from the wok and set aside.<br />
+            </p>
+          </li>
+          <li>
+            <h3>Stir-Fry the Vegetables:</h3>
+            <p>
+              - In the same wok, add another tablespoon of oil if needed.<br />
+              - Add minced garlic and sauté until fragrant.<br />
+              - Add chopped onion and mixed vegetables. Stir-fry until the
+              vegetables are tender yet crisp.<br />
+            </p>
+          </li>
+          <li>
+            <h3>Add Rice and Seasonings:</h3>
+            <p>
+              - Push the vegetables to the side of the wok and add the cooled
+              cooked rice to the empty space.<br />
+              - Drizzle soy sauce, oyster sauce (if using), sesame oil, and
+              white pepper powder over the rice.<br />
+              - Mix everything together and let the rice cook for a few
+              minutes.<br />
+            </p>
+          </li>
+          <li>
+            <h3>Combine and Garnish:</h3>
+            <p>
+              - Add the scrambled eggs back to the wok with the rice and
+              vegetables.<br />
+              - Toss everything together until well combined and heated
+              through.<br />
+              - Taste and adjust the seasoning with salt and more soy sauce if
+              needed.<br />
+              - Garnish with chopped green onions.<br />
+            </p>
+          </li>
+          <li>
+            <h3>Serve:</h3>
+            <p>
+              - Your delicious Egg Fried Rice is ready to be served. Enjoy it as
+              a flavorful and satisfying meal!<br />
+            </p>
+          </li>
+        </ol>
+      </div>
+      <button onclick="toggleContent('Vegfriedrice')">
+        <h2>Veg Fried rice</h2>
+      </button>
+      <div id="VegfriedriceContent" style="display: block" class="psize">
+        <h2>Ingredients:</h2>
+        <ul>
+          <li>Cooked rice<br /></li>
+          <li>
+            Mixed vegetables (carrots, peas, corn, bell peppers, etc.)<br />
+          </li>
+          <li>Onion<br /></li>
+          <li>Garlic<br /></li>
+          <li>Ginger<br /></li>
+          <li>Soy sauce<br /></li>
+          <li>Sesame oil<br /></li>
+          <li>Vegetable oil<br /></li>
+          <li>Salt<br /></li>
+          <li>Pepper<br /></li>
+          <li>Optional: Eggs (for scrambled egg in the fried rice)<br /></li>
+          <li>Optional: Green onions (for garnish)<br /></li>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li>Cook the rice and let it cool.</li>
+          <li>Chop the mixed vegetables, onions, garlic, and ginger.</li>
+          <li>Heat vegetable oil in a pan over medium heat.</li>
+          <li>Add chopped onions, garlic, and ginger. Sauté until fragrant.</li>
+          <li>Add the mixed vegetables and stir-fry until they are tender.</li>
+          <li>
+            Push the vegetables to the side of the pan and scramble the eggs (if
+            using) on the other side.
+          </li>
+          <li>Combine the scrambled eggs with the vegetables.</li>
+          <li>Add the cooled rice to the pan. Break up any clumps.</li>
+          <li>
+            Drizzle soy sauce and sesame oil over the rice. Mix well to
+            distribute the flavors.
+          </li>
+          <li>Season with salt and pepper according to your taste.</li>
+          <li>
+            Stir-fry everything together for a few minutes until the rice is
+            heated through.
+          </li>
+          <li>Optional: Garnish with chopped green onions.</li>
+          <li>Remove from heat and serve hot.</li>
+        </ol>
+      </div>
+    </div>
+
+    <button onclick="toggleContent('Chowmein')"><h2>Chow mein</h2></button>
+    <br />
+    <div id="ChowmeinContent" style="display: block">
+      Chowmein is a popular and flavorful dish in Asian cuisine, particularly in
+      Chinese and Indian culinary traditions.
+      <button onclick="toggleContent('mein')"><h2>Chicken chowmein</h2></button>
+      <div id="meinContent" style="display: block" class="psize">
+        <h2>Ingredients:</h2>
+        <ul>
+          <li>Chicken breast, sliced</li>
+          <li>Chowmein noodles</li>
+          <li>
+            Assorted vegetables (carrots, cabbage, bell peppers, etc.),
+            julienned
+          </li>
+          <li>Onion, thinly sliced</li>
+          <li>Garlic, minced</li>
+          <li>Ginger, minced</li>
+          <li>Soy sauce</li>
+          <li>Oyster sauce</li>
+          <li>Chicken broth</li>
+          <li>Vegetable oil</li>
+          <li>Salt and pepper</li>
+          <li><br /></li>
+          <li>Optional:</li>
+          <ul>
+            <li>Bean sprouts</li>
+            <li>Mushrooms</li>
+            <li>Green onions, chopped (for garnish)</li>
+            <li>Chili sauce or sriracha (for some heat)</li>
+          </ul>
+        </ul>
+        <h2>Steps:</h2>
+        <ol>
+          <li>
+            Boil water in a large pot and cook chowmein noodles according to
+            package instructions.
+          </li>
+          <li>
+            Drain and rinse the noodles under cold water to stop the cooking
+            process. Set aside.
+          </li>
+          <li>
+            In a bowl, marinate boneless chicken pieces with soy sauce, ginger,
+            garlic, and a pinch of salt. Let it sit for about 15 minutes.
+          </li>
+          <li>
+            Heat vegetable oil in a wok or large pan over medium-high heat.
+          </li>
+          <li>
+            Add marinated chicken and stir-fry until cooked through. Remove from
+            the wok and set aside.
+          </li>
+          <li>
+            In the same wok, add more oil if needed. Add sliced onions, bell
+            peppers, carrots, and any other desired vegetables.
+          </li>
+          <li>
+            Saute the vegetables until they start to soften. You can also add a
+            pinch of salt and pepper for seasoning.
+          </li>
+          <li>
+            Push the vegetables to one side of the wok and crack eggs into the
+            empty space.
+          </li>
+          <li>Scramble the eggs and let them cook until they are fully set.</li>
+          <li>
+            Add back the cooked chicken to the wok with the vegetables and eggs.
+          </li>
+          <li>Now, add the cooked chowmein noodles to the wok.</li>
+          <li>
+            Pour soy sauce and oyster sauce over the noodles and toss everything
+            together.
+          </li>
+          <li>
+            Stir-fry for a few minutes until the noodles are heated through and
+            well coated with the sauces.
+          </li>
+          <li>
+            Adjust seasoning with more soy sauce or salt and pepper if needed.
+          </li>
+          <li>Finish with a drizzle of sesame oil for extra flavor.</li>
+          <li>
+            Transfer the chicken chowmein to serving plates and garnish with
+            chopped green onions.
+          </li>
+        </ol>
+      </div>
+      <button onclick="toggleContent('vegmein')"><h2>Veg chowmein</h2></button>
+      <div id="vegmeinContent" style="display: block" class="psize">
         <h2>Ingredients:</h2>
         <ol>
-            <li>Cooked chow mein noodles</li>
-            <li>Mixed vegetables (carrots, cabbage, bell peppers, etc.)</li>
-            <li>Onion</li>
-            <li>Garlic</li>
-            <li>Ginger</li>
-            <li>Soy sauce</li>
-            <li>Vegetable broth</li>
-            <li>Cornstarch</li>
-            <li>Sesame oil</li>
-            <li>Vegetable oil</li>
-            <li>Salt and pepper</li>
-          </ol>
-          
-          <p>Steps:</p>
-          <ol>
-            <li>Heat vegetable oil in a wok or large pan.</li>
-            <li>Add chopped onion, garlic, and ginger. Sauté until fragrant.</li>
-            <li>Add mixed vegetables and stir-fry until they start to soften.</li>
-            <li>In a bowl, mix soy sauce, vegetable broth, and cornstarch to make the sauce.</li>
-            <li>Pour the sauce into the pan and stir-fry the vegetables in the sauce.</li>
-            <li>Add the cooked chow mein noodles and toss everything together.</li>
-            <li>Drizzle with sesame oil for flavor.</li>
-            <li>Season with salt and pepper to taste.</li>
-            <li>Remove from heat and serve hot.</li>
-          </ol>
-          
-    </div>
-    <button onclick="toggleContent('eggmein')"><h2>Egg Chowmein</h2></button>
-    <div id="eggmeinContent" style="display: block;" class="psize">
+          <li>Cooked chow mein noodles</li>
+          <li>Mixed vegetables (carrots, cabbage, bell peppers, etc.)</li>
+          <li>Onion</li>
+          <li>Garlic</li>
+          <li>Ginger</li>
+          <li>Soy sauce</li>
+          <li>Vegetable broth</li>
+          <li>Cornstarch</li>
+          <li>Sesame oil</li>
+          <li>Vegetable oil</li>
+          <li>Salt and pepper</li>
+        </ol>
+
+        <p>Steps:</p>
+        <ol>
+          <li>Heat vegetable oil in a wok or large pan.</li>
+          <li>Add chopped onion, garlic, and ginger. Sauté until fragrant.</li>
+          <li>Add mixed vegetables and stir-fry until they start to soften.</li>
+          <li>
+            In a bowl, mix soy sauce, vegetable broth, and cornstarch to make
+            the sauce.
+          </li>
+          <li>
+            Pour the sauce into the pan and stir-fry the vegetables in the
+            sauce.
+          </li>
+          <li>
+            Add the cooked chow mein noodles and toss everything together.
+          </li>
+          <li>Drizzle with sesame oil for flavor.</li>
+          <li>Season with salt and pepper to taste.</li>
+          <li>Remove from heat and serve hot.</li>
+        </ol>
+      </div>
+      <button onclick="toggleContent('eggmein')"><h2>Egg Chowmein</h2></button>
+      <div id="eggmeinContent" style="display: block" class="psize">
         <h2>Ingredients:</h2>
         <ol>
-            <li>Cooked chow mein noodles</li>
-            <li>2 eggs, beaten</li>
-            <li>1 cup mixed vegetables (carrots, bell peppers, cabbage, etc.), julienned</li>
-            <li>1 onion, thinly sliced</li>
-            <li>2 cloves garlic, minced</li>
-            <li>2 tablespoons soy sauce</li>
-            <li>1 tablespoon oyster sauce</li>
-            <li>1 teaspoon sesame oil</li>
-            <li>1 tablespoon vegetable oil</li>
-            <li>Salt and pepper to taste</li>
-            <li>Chopped green onions for garnish (optional)</li>
-          </ol>
-          
-          <p>Follow these steps:</p>
-          
-          <ol>
-            <li>Heat vegetable oil in a pan or wok over medium heat.</li>
-            <li>Add beaten eggs and scramble until fully cooked. Remove and set aside.</li>
-            <li>In the same pan, add a bit more oil if needed. Sauté onions, garlic, and mixed vegetables until tender.</li>
-            <li>Add cooked chow mein noodles to the pan. Stir-fry for a few minutes to heat through.</li>
-            <li>Push the noodles to the side of the pan and add soy sauce, oyster sauce, and sesame oil to the center. Mix the sauces and then combine with the noodles.</li>
-            <li>Add the scrambled eggs back to the pan. Toss everything together to evenly distribute the ingredients.</li>
-            <li>Season with salt and pepper to taste. You can also adjust the sauces if desired.</li>
-            <li>Once everything is heated and well-mixed, remove from heat.</li>
-            <li>Garnish with chopped green onions if using.</li>
-            <li>Serve hot and enjoy your delicious homemade Egg Chow Mein!</li>
-          </ol>
-          
+          <li>Cooked chow mein noodles</li>
+          <li>2 eggs, beaten</li>
+          <li>
+            1 cup mixed vegetables (carrots, bell peppers, cabbage, etc.),
+            julienned
+          </li>
+          <li>1 onion, thinly sliced</li>
+          <li>2 cloves garlic, minced</li>
+          <li>2 tablespoons soy sauce</li>
+          <li>1 tablespoon oyster sauce</li>
+          <li>1 teaspoon sesame oil</li>
+          <li>1 tablespoon vegetable oil</li>
+          <li>Salt and pepper to taste</li>
+          <li>Chopped green onions for garnish (optional)</li>
+        </ol>
+
+        <p>Follow these steps:</p>
+
+        <ol>
+          <li>Heat vegetable oil in a pan or wok over medium heat.</li>
+          <li>
+            Add beaten eggs and scramble until fully cooked. Remove and set
+            aside.
+          </li>
+          <li>
+            In the same pan, add a bit more oil if needed. Sauté onions, garlic,
+            and mixed vegetables until tender.
+          </li>
+          <li>
+            Add cooked chow mein noodles to the pan. Stir-fry for a few minutes
+            to heat through.
+          </li>
+          <li>
+            Push the noodles to the side of the pan and add soy sauce, oyster
+            sauce, and sesame oil to the center. Mix the sauces and then combine
+            with the noodles.
+          </li>
+          <li>
+            Add the scrambled eggs back to the pan. Toss everything together to
+            evenly distribute the ingredients.
+          </li>
+          <li>
+            Season with salt and pepper to taste. You can also adjust the sauces
+            if desired.
+          </li>
+          <li>Once everything is heated and well-mixed, remove from heat.</li>
+          <li>Garnish with chopped green onions if using.</li>
+          <li>Serve hot and enjoy your delicious homemade Egg Chow Mein!</li>
+        </ol>
+      </div>
     </div>
-</div>
+    <div class="footer">
+      <p id="foot"><a href="https://digi-cook.github.io/Digi/">Home</a></p>
+      <br />
+      <p id="foot"><a href="Contact.html">Contact Us</a></p>
+      <br />
+      <p id="foot"><a href="About.html">About Us</a></p>
+      <br />
+      <p id="foot"><a href="indian_cus.html">Indian Cuisine</a></p>
+      <p id="foot"><a href="chinese_cus.html">Chinese Cuisine</a></p>
+    </div>
   </body>
 </html>
