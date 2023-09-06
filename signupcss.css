@@ -1,0 +1,141 @@
+body{
+
+    background-image: url("bgimage.jpg");
+    background-size:auto; 
+  }
+  @keyframes bground {
+    0% {
+      background: #77e8e8;
+    }
+    20% {
+      background: #e4640f;
+    }
+    40% {
+      background: #d6e28a;
+    }
+    60% {
+      background: #decc85;
+    }
+    80% {
+      background: #2b945a;
+    }
+    100% {
+      background: #e7c196;
+    }
+    }
+    
+    
+    .header{
+      display: flex;
+      align-items: center; 
+      padding: 5px;
+     
+      border-bottom-style :solid;
+      border-color: black;
+      animation-name: bground;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      margin-bottom: 1cm;
+      
+    }
+    .logo {
+      flex-shrink: 0;
+      float: left;
+      width: 50px;
+      height: 50px;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .website-name {
+      flex-shrink: 0;
+      font-size: 40px;
+      font-weight: bold;
+      color: black;
+      margin-left: 10px; 
+    }
+    .home {
+        float: right;
+        text-align: right;
+        margin-left: 70%;
+    }
+    input[value=Home]{
+        width: 100%;
+        background-color: #1900ff;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 10px 10px;
+        border: solid 2px black;
+        border-radius: 4px;
+        cursor: pointer;
+        
+    }
+
+    marquee{
+        background-color: rgb(243, 69, 69);
+        animation-name: bground;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        border-top: dashed 1.5px;
+        border-bottom:dashed 1.5px ;
+        margin-top: -2cm;
+        }
+    .formbg
+    {   
+        background-image: url("signupbg.jpeg");
+        background-size: 13cm 14.5cm;
+        background-repeat: no-repeat;
+        margin : -1cm 0cm 0cm 11cm;
+        width: 13cm;
+        height: 14.5cm;
+        text-align: center;
+        align-items: center;
+    }
+    input[id="email"],input[id="username"],input[id="pwd"],input[id="repwd"]{
+        width: 30%;
+        padding: 12px 12px;
+        margin: 0.5cm 2cm 0cm 0cm;
+        display: inline-block;
+        border: 1px solid #0a0a0a;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: rgb(159, 243, 243);
+      }
+      label[for="email"],label[for="username"],label[for="pwd"],label[for="repwd"]{
+        margin: 2cm 2cm 0cm 0cm;
+        padding: 12px 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+      input[value=signup] {
+        width: 20%;
+        background-color: #312ee4;
+        color: white;
+        font-weight: bold;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0cm 0cm 0cm -2cm;
+      }
+      .not{
+        width = 5cm;
+        float: left;
+        margin:0px 0px 0px 2.9cm;
+      }
+      input[value ="login"]{
+        
+        width: 30%;
+        background-color: #1900ff;
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+        padding: 10px 10px;
+        border: solid 2px black;
+        border-radius: 4px;
+        cursor: pointer
+      }

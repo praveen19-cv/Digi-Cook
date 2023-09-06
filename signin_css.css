@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(197, 197, 197);
+}
+
+@keyframes bground {
+    0% {
+      background: #77e8e8;
+    }
+    20% {
+      background: #e4640f;
+    }
+    40% {
+      background: #d6e28a;
+    }
+    60% {
+      background: #decc85;
+    }
+    80% {
+      background: #2b945a;
+    }
+    100% {
+      background: #e7c196;
+    }
+}
+     
+    .header{
+      display: flex;
+      align-items: center; 
+      padding: 5px;
+    
+      border-bottom-style :solid;
+      border-color: black;
+      animation-name: bground;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      margin-bottom: 1cm;
+      
+    }
+.logo {
+    flex-shrink: 0;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.website-name {
+    flex-shrink: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px; 
+}
+.logout {
+    float: right;
+    text-align: right;
+    margin-left: 70%;
+}
+input[value=Logout]{
+    width: 100%;
+    background-color: #1900ff;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: solid 2px black;
+    border-radius: 4px;
+    cursor: pointer
+}
+th
+{
+    font-size: 25px;
+}
+td{
+    font-size: 20px;
+}
+.addrecipe
+{
+    font-size: 30px;
+}
+input[value="Click here"]{
+    width: 7%;
+    background-color: #070707;
+    color: rgb(245, 242, 242);
+    font-weight: bold;
+    padding: 10px 10px;
+    border: solid 2px rgb(245, 240, 240);
+    border-radius: 4px;
+    cursor: pointer
+
+}
+marquee{
+    background-color: rgb(243, 69, 69);
+    animation-name: bground;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    border-top: dashed 1.5px;
+    border-bottom:dashed 1.5px ;
+    margin:auto;
+    }

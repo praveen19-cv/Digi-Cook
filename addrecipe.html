@@ -4,14 +4,25 @@
         <title> Digi Cook
         </title>
         <link rel="icon" type="image/x-icon" href="logo.png" >
+        <link rel="stylesheet" href="addcss.css">
     </head>
-    <img src="logo.png" alt="logo"
-    style="float:left;width:50px;height:50px">
-    <p style="color:black;font-size:40px"><b> Digi Cook</b></p>
-    <hr class = "topline">
-    <h1> Hello user,</h1>
-    <p>Fillup the following form to add a recipe:</p>
+
     <body>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" ><img src="logo.png" alt="logo" ></a>
+            </div>
+            <div class="website-name">
+                Digi Cook
+            </div>
+            <div class="logout">
+                <a href="index.html">
+                    <input type="button" onclick="alert('Logged Out successfully')" value="Logout">
+                </a>
+            </div>
+        </div>
+        <h1> Hello user,</h1>
+        <p id="a">Fillup the following form to add a recipe:</p>
         <form style = "text-align: center;">
             <p><b>Name:</b></p>
             <textarea name="name of the recipe" rows="1" cols="10"></textarea>
@@ -28,7 +39,7 @@
             <br><br>
             <input type="button" onclick="alert('Added successfully')" value="Add recipe">
         </form>
-        <hr>
+       <br>
         <marquee behavior="scroll" direction="right" scrollamount="10" width = "100%"><b>Digi Cook -- Digi Cook -- Digi Cook</b></marquee>
     </body>
 </html>

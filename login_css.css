@@ -1,0 +1,166 @@
+body{
+
+  background-image: url("bgimage.jpg");
+  background-size:auto; 
+}
+@keyframes bground {
+0% {
+  background: #77e8e8;
+}
+20% {
+  background: #e4640f;
+}
+40% {
+  background: #d6e28a;
+}
+60% {
+  background: #decc85;
+}
+80% {
+  background: #2b945a;
+}
+100% {
+  background: #e7c196;
+}
+}
+
+
+.header{
+  display: flex;
+  align-items: center; 
+  padding: 5px;
+ 
+  border-bottom-style :solid;
+  border-color: black;
+  animation-name: bground;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  margin-bottom: 1cm;
+  
+}
+.logo {
+  flex-shrink: 0;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.website-name {
+  flex-shrink: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px; 
+}
+input[type=text]{
+  width: 30%;
+  padding: 12px 20px;
+  margin: -20cm 2px 0cm 9cm;
+  display: inline-block;
+  border: 1px solid #020202;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-top:-90% ;
+  background-color: rgb(159, 243, 243);
+}
+input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: -3cm 2px 0cm 9cm;
+  display: inline-block;
+  border: 1px solid #070707;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(159, 243, 243);
+}
+label[for="pwd"],label[for="username"]{
+align-self:center;
+margin: auto;
+margin-left: 6cm;
+
+padding: 10px 10px;
+}
+label[for="username"]{
+margin-left: -1cm;
+}
+
+input[value=signin]{
+  width: 20%;
+  background-color: #6b69e4;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -3cm;
+  margin-left: 4cm;
+}
+
+input[value=signup] {
+  width: 20%;
+  background-color: #6b69e4;
+  color: white;
+  font-weight: bold;
+  padding: 14px 20px;
+  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -3cm;
+  margin-bottom: 6cm;
+  border-bottom:9cm ;
+}
+
+
+input[type=button]:hover {
+  background-color: #264b91;
+}
+.not
+{
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 4cm;
+  border-bottom:90px ;
+}
+.login{
+  float:left;
+  margin:auto;
+  margin-top:1.5cm;
+  margin-left:12cm;
+  align: center;
+  text-align: center;
+  
+
+}
+.login.img
+{
+  width:100%;
+  height:100%;
+}
+form {
+  margin : 0cm 0px 0cm 7cm;
+  width:20cm;
+  height:11cm;
+
+  background-image: url("formbgbg.jpeg");
+  background-size: 21cm 11cm;
+  background-repeat: no-repeat;
+  padding:0px 0px 15px 0px;
+
+}
+marquee{
+background-color: rgb(243, 69, 69);
+animation-name: bground;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+border-top: dashed 1.5px;
+border-bottom:dashed 1.5px ;
+margin:auto;
+}

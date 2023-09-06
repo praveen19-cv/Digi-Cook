@@ -5,12 +5,25 @@
              Digi Cook
         </title>
         <link rel="icon" type="image/x-icon" href="logo.png" >
+        <link rel="stylesheet" href="signupcss.css">
     </head>
-    <img src="logo.png" alt="logo"
-    style="float:left;width:50px;height:50px">
-    <p style="color:balck;font-size:40px"><b> Digi Cook</b></p>
-    <hr class = "topline">
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html" ><img src="logo.png" alt="logo" ></a>
+        </div>
+        <div class="website-name">
+            Digi Cook
+        </div>
+        <div class="home">
+            <a href="index.html">
+                <input type="button" onclick="alert('Logged Out successfully')" value="Home">
+            </a>
+        </div>
+    </div>
+    <div class="formbg">
     <form style = "text-align: center;">
+        <br>
         <label for="email">EMAIL-ID:</label>
         <br>
         <input type="email" id="email" name="email" placeholder="Enter Email">
@@ -23,13 +36,21 @@
         <br>
         <input type="password" id="pwd" name="pwd" placeholder="Enter Password">
         <br><br>
-        <label for="pwd">RE-ENTER PASSWORD:</label>
+        <label for="repwd">RE-ENTER PASSWORD:</label>
         <br>
-        <input type="password" id="pwd" name="pwd" placeholder="Re-enter Password">
+        <input type="password" id="repwd" name="pwd" placeholder="Re-enter Password">
         <br><br>
         <a href="signin.html"><input type="button" value ="signup"></a>
+        <br>
+        <div class="not">
+            <p><b>Already have account?</b><a href="login.html"><input type="button" value ="login"></a></p>
+            
+        </div>
+
     </form>
-    <br><br>
+</div>
+    <br>
     <marquee behavior="scroll" direction="right" scrollamount="10" width = "100%"><b>Digi Cook -- Digi Cook -- Digi Cook</b></marquee>
+    </body>
 </html>
 
