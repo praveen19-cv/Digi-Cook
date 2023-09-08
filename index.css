@@ -187,3 +187,25 @@ a:active {
   font-family: "Times New Roman", Times, serif;
   display: inline;
 }
+.search-container {
+  position: absolute;
+  left: 45%;
+}
+
+#search-box {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#suggestion-box {
+  display: none;
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+}
