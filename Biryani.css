@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  animation-name: bground;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  animation-name: bground;
+  background-color: lightblue;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.logo {
+  vertical-align: middle;
+  padding-right: 1px;
+  text-align: start;
+  font-size: 100%;
+  white-space: nowrap;
+}
+.heading-name {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-size: 18px;
+}
+.indian-cuisine {
+  position: absolute;
+  top: 0%;
+  right: 75%;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 0%;
+  padding-top: 0.5%;
+}
+.chinese-header {
+  position: absolute;
+  top: 0%;
+  right: 66%;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 0%;
+  padding-top: 0.5%;
+}
+.search-container {
+  position: absolute;
+  left: 45%;
+}
+
+#search-box {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#suggestion-box {
+  display: none;
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+@keyframes bground {
+  0% {
+    background: #56e4e4;
+  }
+  20% {
+    background: #52e655;
+  }
+  40% {
+    background: #d5ea4f;
+  }
+  60% {
+    background: #ebcd55;
+  }
+  80% {
+    background: #57e259;
+  }
+  100% {
+    background: #51eaea;
+  }
+}
+.footer {
+  background-color: rgba(12, 12, 12, 0.633);
+  padding: 10px;
+  text-align: center;
+}
+#foot {
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+  display: inline;
+}
