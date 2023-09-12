@@ -12,6 +12,7 @@ body {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-delay: 0s;
+  display: flex;
 }
 .Login {
   position: absolute;
