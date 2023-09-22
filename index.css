@@ -29,12 +29,14 @@ body {
   text-align: start;
   font-size: 100%;
   white-space: nowrap;
+  display: flex;
 }
 .heading-name {
-  margin-top: 0;
+  margin-left: 3px;
+  margin-top: 8px;
   margin-bottom: 1rem;
-  line-height: 1.2;
-  font-size: 18px;
+  line-height: 1;
+  font-size: 25px;
 }
 .all-cuisine {
   text-align: center;
@@ -69,7 +71,7 @@ body {
 .chinese-header {
   position: absolute;
   top: 0%;
-  right: 66%;
+  right: 60%;
   margin: 0px;
   padding: 0px;
   padding-bottom: 0%;
@@ -190,7 +192,9 @@ a:active {
 }
 .search-container {
   position: absolute;
+  display: flex;
   left: 45%;
+  top: 0.5%;
 }
 
 #search-box {
@@ -212,12 +216,16 @@ a:active {
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px; /* Adjust font size for smaller screens */
+    font-size: 25px; /* Adjust font size for smaller screens */
   }
 }
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 14px; /* Adjust font size for even smaller screens */
+    font-size: 25px; /* Adjust font size for even smaller screens */
   }
+}
+button {
+  font-size: 20px;
+  display: flex;
 }
