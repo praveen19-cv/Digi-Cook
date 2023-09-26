@@ -205,8 +205,9 @@ a:active {
 }
 
 #suggestion-box {
-  display: none;
+  display: block;
   position: absolute;
+  top: 100%;
   width: 100%;
   border: 1px solid #ccc;
   border-top: none;
@@ -228,4 +229,15 @@ a:active {
 button {
   font-size: 20px;
   display: flex;
+}
+#filter-category {
+  position: absolute;
+  display: flex;
+  left: 75%;
+  top: 0.5%;
+  font-size: 20px;
+  padding: 5px;
+}
+#all {
+  display: none;
 }
