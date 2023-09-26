@@ -39,7 +39,7 @@ body {
 .chinese-header {
   position: absolute;
   top: 0%;
-  right: 66%;
+  right: 60%;
   margin: 0px;
   padding: 0px;
   padding-bottom: 0%;
@@ -58,7 +58,7 @@ body {
 }
 
 #suggestion-box {
-  display: none;
+  display: block;
   position: absolute;
   width: 100%;
   border: 1px solid #ccc;
@@ -96,4 +96,19 @@ body {
   font-size: 19px;
   font-family: "Times New Roman", Times, serif;
   display: inline;
+}
+#filter-category {
+  position: absolute;
+  display: flex;
+  left: 75%;
+  top: 0.5%;
+  font-size: 20px;
+  padding: 5px;
+}
+button {
+  font-size: 20px;
+  display: flex;
+}
+#all {
+  display: none;
 }
