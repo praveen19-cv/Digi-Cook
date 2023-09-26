@@ -12,22 +12,27 @@
     <meta name="google-adsense-account" content="ca-pub-7725169324308186">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7725169324308186"
      crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <a href="indian_cus.html"
-      ><div class="indian-cuisine">
-        <button><b>Indian Cusine</b></button>
-      </div></a
-    >
-    <a href="chinese_cus.html"
-      ><div class="chinese-header">
-        <button><b>Chinese Cuisine</b></button>
-      </div></a
-    >
+    <div class="indian-cuisine" id="indian-cuisine-link">
+      <button><b>Indian Cusine</b></button>
+    </div>
+
+    <div class="chinese-header" id="chinese-cuisine-link">
+      <button><b>Chinese Cuisine</b></button>
+    </div>
+
     <div class="search-container">
       <input type="text" id="search-box" placeholder="Top Recipes" />
       <div class="suggestions" id="suggestion-box"></div>
     </div>
+    <select id="filter-category">
+      <option id="all" value="all">Categories</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
+    </select>
     <script src="home.js"></script>
     <div class="header">
       <a href="login.html"
@@ -51,7 +56,7 @@
         width="100%"
       />
       <div style="width: 100%; margin: 0 auto; font-size: 20px">
-        <br /><b class="csstext"><h1>Welcome to Digi Cook </h1></b>
+        <b class="csstext"><h1>Welcome to Digi Cook</h1></b>
         <br />
 
         <br />Indulge your culinary curiosity and embark on a flavor-filled
@@ -156,19 +161,29 @@
       <div class="top-recipes">
         <button class="recipe-button">
           <a href="Dosa.html"
-            ><img src="Dosa image.jpg" alt="Dosa" height="70" width="70" /><br />Dosa</a
+            ><img
+              src="Dosa image.jpg"
+              alt="Dosa"
+              height="70"
+              width="70"
+            /><br />Dosa</a
           >
         </button>
         <button class="recipe-button">
           <a href="idly.html"
-            ><img src="idly image.jpg" alt="idly" height="70" width="70" /><br />Idly</a
+            ><img
+              src="idly image.jpg"
+              alt="idly"
+              height="70"
+              width="70"
+            /><br />Idly</a
           >
         </button>
         <button class="recipe-button">
           <a href="biryani.html"
             ><img
               src="chicken biryani.jpg"
-               alt="biryani"
+              alt="biryani"
               height="70"
               width="70"
             /><br />Biryani</a
@@ -176,7 +191,22 @@
         </button>
         <button class="recipe-button">
           <a href="Upma.html"
-            ><img src="upma.webp" alt="upma" height="70" width="70" /><br />Upma</a
+            ><img
+              src="upma.webp"
+              alt="upma"
+              height="70"
+              width="70"
+            /><br />Upma</a
+          >
+        </button>
+        <button class="recipe-button">
+          <a href="chicken.html"
+            ><img
+              src="chicken.jpg"
+              alt="Chicken Fried Rice"
+              height="70"
+              width="70"
+            /><br />Chicken-Fried-Rice</a
           >
         </button>
       </div>
