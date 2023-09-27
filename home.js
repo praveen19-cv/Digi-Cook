@@ -74,3 +74,31 @@ indianCuisineButton.addEventListener("click", () => {
 chineseCuisineButton.addEventListener("click", () => {
   window.location.href = "chinese_cus.html";
 });
+
+const voiceSearchButton = document.getElementById("voice-search-button");
+if ("webkitSpeechRecognition" in window) {
+  const recognition = new webkitSpeechRecognition();
+
+  recognition.continuous = false;
+  recognition.lang = "en-US";
+
+  recognition.onstart = () => {
+    searchBox.placeholder = "Listening...";
+  };
+
+  recognition.onresult = (event) => {
+    const result = event.results[0][0].transcript;
+    searchBox.value = result;
+  };
+
+  recognition.onend = () => {
+    searchBox.placeholder = "Search recipes";
+  };
+
+  voiceSearchButton.addEventListener("click", () => {
+    recognition.start();
+  });
+} else {
+  voiceSearchButton.disabled = true;
+  voiceSearchButton.textContent = "Voice Search Not Supported";
+}
