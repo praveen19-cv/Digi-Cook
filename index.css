@@ -217,13 +217,13 @@ a:active {
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: 25px; /* Adjust font size for smaller screens */
+    font-size: 25px; 
   }
 }
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 25px; /* Adjust font size for even smaller screens */
+    font-size: 25px; 
   }
 }
 button {
@@ -240,4 +240,11 @@ button {
 }
 #all {
   display: none;
+}
+#voice-search-button {
+  position: absolute;
+  display: flex;
+  left: 72%;
+  top: 0.5%;
+  padding: 5px;
 }
