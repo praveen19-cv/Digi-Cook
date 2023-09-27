@@ -1,10 +1,12 @@
 <html>
   <head>
     <title>Digi Cook</title>
-    <link rel="icon" type="image/x-icon" href="images.jpeg" />
-    <link rel="stylesheet" href="chinese_cus.css" />
+    <link rel="icon" type="image/x-icon" href="digi cook logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="css.css">
   </head>
   <body>
+    <script src="javascript.js"></script>
+
     <a href="indian_cus.html"
       ><div class="indian-cuisine">
         <button><b>Indian Cusine</b></button>
@@ -19,15 +21,15 @@
       <a href="https://digi-cook.github.io/Digi/" title="Digi Cook">
         <img
           class="logo"
-          src="recipe logo.png"
+          src="digi cook logo.jpg"
           alt="Logo"
           style="height: 40px; width: 40px"
         />
       </a>
       <span class="heading-name"><b>Digi Cook</b></span>
     </div>
-    <img
-      src="chin.jpg"
+   <img
+      src="D:\digicook\chinese cuisine.jpg"
       alt="CHINESE CUSIENE"
       height="600"
       width="1500"
@@ -41,15 +43,62 @@
       "
     >
       WELCOME TO CHINESE CUISINE
+      <div style="width: 100%; margin: 0;display: flex;justify-content: center;
+      align-items: center;">
+        <div id="slider" class="slider">
+          <img src="image1.jpg" alt="Image 1" width = "500cm" height="500cm">
+          <img src="image2.jpg" alt="Image 2" width = "500cm" height="500cm">
+          <img src="image3.jpg" alt="Image 3" width = "500cm" height="500cm">
+        </div>
+        <script>
+            let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+    
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        if (i === index) {
+          slide.style.display = 'block';
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+    }
+    
+    function nextSlide() {
+      currentSlide++;
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
+      }
+      showSlide(currentSlide);
+    }
+    
+    function prevSlide() {
+      currentSlide--;
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+      showSlide(currentSlide);
+    }
+    
+    showSlide(currentSlide);
+    
+          </script>
+        
+        
+        <button class="prev" onclick="prevSlide()">❮</button>
+        <button class="next" onclick="nextSlide()">❯</button>
+        <br>
     </h1>
-    <button onclick="toggleContent('Springroll')"><h2>Spring roll</h2></button>
+    <div class="grid-item"><button onclick="toggleContent('Springroll')"><img src="spring rolls.jpg" alt="spring rolls image" width="500" height="600"></button>
     <br />
     <div id="SpringrollContent" style="display: block">
-      <div style="width: 100%; margin: 0">
+     
+        
         Crispy and flavorful, spring rolls are delectable appetizers featuring a
         delightful blend of vegetables and paneer, wrapped in thin sheets and
         deep-fried to perfection.
       </div>
+      
       <button onclick="toggleContent('Paneerspringroll')">
         <h2>Paneer Springroll</h2>
       </button>
@@ -144,7 +193,7 @@
       <button onclick="toggleContent('chickenspringroll')">
         <h2>Chicken Springroll</h2>
       </button>
-      <div id="chickenspringrollContent" style="display: block" class="psize">
+      <div id="chickenspringrollContent" style="display: none" class="psize">
         <h2>Ingredients:</h2>
         <ul>
           <li>200g cooked chicken, shredded</li>
@@ -226,9 +275,9 @@
         </ol>
       </div>
     </div>
-    <button onclick="toggleContent('Dumplings')"><h2>Dumplings</h2></button>
+    <div class="grid-item"><button onclick="toggleContent('Dumplings')"><img src="DUMPLINGS.jpg" alt="DUMPLINGS image" width="500" height="200"></button>
     <br />
-    <div id="DumplingsContent" style="display: block" class="psize">
+    <div id="DumplingsContent" style="display: none" class="psize">
       Small pieces of dough filled with various ingredients, often served
       boiled, steamed, or fried.
       <h2>Ingredients:</h2>
@@ -298,15 +347,15 @@
         </li>
       </ol>
     </div>
-    <button onclick="toggleContent('friedrice')"><h2>Fried Rice</h2></button>
+    <div class="grid-item"><button onclick="toggleContent('friedrice')"><img src="FRIED RICE.jpg"alt="FRIED RICE" width="500" height="600"></button>
     <br />
-    <div id="friedriceContent" style="display: block">
+    <div id="friedriceContent" style="display: none">
       Cooked rice stir-fried with a variety of vegetables, meats, and often
       eggs.
       <button onclick="toggleContent('chickenfriedrice')">
         <h2>Chicken Fried rice</h2>
       </button>
-      <div id="chickenfriedriceContent" style="display: block" class="psize">
+      <div id="chickenfriedriceContent" style="display: none" class="psize">
         <h2>Ingredients:</h2>
 
         <p>
@@ -479,7 +528,7 @@
       <button onclick="toggleContent('Vegfriedrice')">
         <h2>Veg Fried rice</h2>
       </button>
-      <div id="VegfriedriceContent" style="display: block" class="psize">
+      <div id="VegfriedriceContent" style="display: none" class="psize">
         <h2>Ingredients:</h2>
         <ul>
           <li>Cooked rice<br /></li>
@@ -525,13 +574,13 @@
       </div>
     </div>
 
-    <button onclick="toggleContent('Chowmein')"><h2>Chow mein</h2></button>
+    <div class="grid-item"><button onclick="toggleContent('Chowmein')"><img src="chowmein.jpg" alt="chowmein image" width="500" height="600"></button>
     <br />
-    <div id="ChowmeinContent" style="display: block">
+    <div id="ChowmeinContent" style="display: none">
       Chowmein is a popular and flavorful dish in Asian cuisine, particularly in
       Chinese and Indian culinary traditions.
       <button onclick="toggleContent('mein')"><h2>Chicken chowmein</h2></button>
-      <div id="meinContent" style="display: block" class="psize">
+      <div id="meinContent" style="display: none" class="psize">
         <h2>Ingredients:</h2>
         <ul>
           <li>Chicken breast, sliced</li>
@@ -614,7 +663,7 @@
         </ol>
       </div>
       <button onclick="toggleContent('vegmein')"><h2>Veg chowmein</h2></button>
-      <div id="vegmeinContent" style="display: block" class="psize">
+      <div id="vegmeinContent" style="display: none" class="psize">
         <h2>Ingredients:</h2>
         <ol>
           <li>Cooked chow mein noodles</li>
@@ -652,7 +701,7 @@
         </ol>
       </div>
       <button onclick="toggleContent('eggmein')"><h2>Egg Chowmein</h2></button>
-      <div id="eggmeinContent" style="display: block" class="psize">
+      <div id="eggmeinContent" style="display: none" class="psize">
         <h2>Ingredients:</h2>
         <ol>
           <li>Cooked chow mein noodles</li>
@@ -716,5 +765,14 @@
       <p id="foot"><a href="indian_cus.html">Indian Cuisine</a></p>
       <p id="foot"><a href="chinese_cus.html">Chinese Cuisine</a></p>
     </div>
+   
+    <div class="reviews">
+        <h3>Reviews:</h3>
+        <div id="comments"></div>
+        <input type="text" id="comment" placeholder="Leave a comment">
+        <button onclick="addComment()">Submit</button>
+    </div>
+
+   
   </body>
 </html>
