@@ -40,7 +40,7 @@
         <br>
         <input type="password" id="repwd" name="pwd" placeholder="Re-enter Password">
         <br><br>
-        <a href="signin.html"><input type="button" value ="signup"></a>
+        <a ><input type="button" value ="signup" id="signup" onclick="validin()"></a>
         <br>
         <div class="not">
             <p><b>Already have account?</b><a href="login.html"><input type="button" value ="login"></a></p>
@@ -52,5 +52,26 @@
     <br>
     <marquee behavior="scroll" direction="right" scrollamount="10" width = "100%"><b>Digi Cook -- Digi Cook -- Digi Cook</b></marquee>
     </body>
+    <script>
+        function validin() {
+        const pwdin = document.getElementById("pwd");
+        const usernamein = document.getElementById("username");
+        const repwdin = document.getElementById("repwd");
+        const emailin = document.getElementById("email");
+        const pwdinval = pwdin.value;
+        const usernameval = usernamein.value;
+        const repwdval = repwdin.value;
+        const emailval = emailin.value;
+
+        
+        if(pwdinval.trim() === "" || usernameval.trim() === "" || repwdval.trim() === "" || emailval.trim() === "" )
+        {
+            alert("fields can't be empty");
+        }
+        else {
+          window.location.href = "signin.html";
+        }
+    }
+    </script>
 </html>
 

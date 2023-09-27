@@ -23,6 +23,14 @@
         </div>
         <h1> Hello user,</h1>
         <p id="a">Fillup the following form to add a recipe:</p>
+        <p><b>Difficulty-Slider:</b></p>
+        <input type="range" min="1" max="5" value="3" id="dl" oninput="dispdiffi()" >
+        <p id="dv" >Medium</p>
+        <br>
+        <p><b>Recipe Image:</b></p>
+        <input type="file" accept="image/*" id="recipeimage">
+        <div id="imagepre"></div> 
+        <br>
         <form style = "text-align: center;">
             <p><b>Name:</b></p>
             <textarea name="name of the recipe" rows="1" cols="10"></textarea>
@@ -37,9 +45,36 @@
             <p><b>Video link</b></p>
             <textarea name="video link/youtube link" rows="2" cols="50"></textarea>
             <br><br>
-            <input type="button" onclick="alert('Added successfully')" value="Add recipe">
+            <input type="button" onclick="dispadd()" value="Add recipe">
         </form>
-       <br>
+        <br>
         <marquee behavior="scroll" direction="right" scrollamount="10" width = "100%"><b>Digi Cook -- Digi Cook -- Digi Cook</b></marquee>
     </body>
+    <script>
+        function dispdiffi() {
+            
+            const slider = document.getElementById('dl');
+            const vdisplay = document.getElementById('dv');
+            const dls = ['Very Easy', 'Easy', 'Medium', 'Hard', 'Very Hard'];
+            const diffivalue = dls[slider.value - 1];
+            vdisplay.textContent = diffivalue;
+        }
+
+        document.getElementById('recipeimage').addEventListener('change', function() {
+            const file = this.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function() {
+                const img = document.createElement('img');
+                img.src = reader.result;
+                img.style.maxWidth = '300px';
+                document.getElementById('imagepre').innerHTML = '';
+                document.getElementById('imagepre').appendChild(img);
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </html>

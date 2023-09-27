@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
+        <title> 
             Digi Cook
         </title>
-        <meta name='description' content='Descriptive, login and enjoy by cooking recipes'>
         <link rel="icon" type="image/x-icon" href="logo.png" >
-
+        
         <link rel="stylesheet" href="login_css.css" >
+        
+
+        
     </head>
     <body>  
         <div class="header">
@@ -17,11 +19,12 @@
             <div class="website-name">
                 Digi Cook
             </div>
-
+  
         </div>
         <div class="login">
             <img src="login.png" alt="login_image" style="width:90px">
         </div>
+
         <form style = "text-align: center;" >
           
             <br><br><br><br><label for="username"><b>USERNAME:</b></label>
@@ -37,10 +40,87 @@
             </div>
             
             <a href="signup.html" ><input type="button" value ="signup"></a>
-            <a href="signin.html" ><input type="button" value ="signin"> </a>
+            <a ><input type="button" value ="signin" onclick="validin()" id="signin"> </a>
             
         </form>
         <br><br><br><br>
         <marquee behavior="scroll" direction="right" scrollamount="10" width = "100%"><b>Digi Cook -- Digi Cook -- Digi Cook</b></marquee>
+        <script >
+           
+        function validin() {
+            const pwdin = document.getElementById("pwd");
+            const usernamein = document.getElementById("username");
+            const pwdval = pwdin.value;
+            const usernameval = usernamein.value;
+
+            
+            if(pwdval.trim() === "" && usernameval.trim() === "" )
+            {
+                alert("username or password cannot be empty. Please enter your creditials.");
+            }
+            else if(usernameval.trim() === "")
+            {
+                alert("username cannot be empty. Please enter your username.");
+            }
+
+            else if (pwdval.trim() === "" ) {
+                alert("password cannot be empty. Please enter your password.");
+            }
+            else {
+
+                var usernames = ["praveen", "akhil", "vignesh","satwik"];
+                var passwords = ["cvpk", "cakr", "gsv","dsp"];
+
+            
+                function validateUsername(username) {
+                for (var i = 0; i < usernames.length; i++) {
+                    if (username === usernames[i]) {
+                    return true;
+                    }
+                }
+                return false;
+                }
+
+                function validatePassword(password) {
+                for (var i = 0; i < passwords.length; i++) {
+                    if (password === passwords[i]) {
+                    return true;
+                    }
+                    }
+                    return false;
+                }
+
+                function showError(message) {
+                    alert(message);
+                }
+
+                function highlightInvalidFields() {
+                if (!validateUsername(document.getElementById("username").value)) {
+                    document.getElementById("username").style.border = "1px solid red";
+                }
+                if (!validatePassword(document.getElementById("pwd").value)) {
+                    document.getElementById("pwd").style.border = "1px solid red";
+                }
+                }
+
+                {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("pwd").value;
+
+                if (!validateUsername(username) || !validatePassword(password)) {
+                    showError("Invalid username or password, Enter the correct Credentials!!!");
+                    disableSignInButton();
+                    highlightInvalidFields();
+                    return;
+                }
+                else
+    
+                window.location.href = "signin.html";
+                }
+            }
+        }
+ 
+        </script>
     </body>
+    
 </html>
